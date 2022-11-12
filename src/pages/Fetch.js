@@ -40,7 +40,6 @@ function Fetch() {
       <button className="px-6 py-2 bg-blue-500" onClick={getNews}>
         Fetch News{" "}
       </button>
-      <h1>{arr}</h1>
       <ul>
         {arr.map((title) => {
           return (
