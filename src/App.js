@@ -1,18 +1,17 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Switch } from "react-router-dom";
 import Home from "./pages/Home";
+// import Fetch from "./pages/Fetch";
 import { NotFound } from "./components/NotFound";
 import SubCatPage from "./pages/SubCatPage";
 
 function App() {
   return (
-    <>
-      <Home />
-      <Routes>
-        <Route to="/" element={<Home />}></Route>
-        <Route to="/*" element={<NotFound />}></Route>
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      {/* <Route path="/fetch" element={<Fetch />}></Route> */}
+      <Route path="/*" element={<NotFound />}></Route>
+    </Routes>
   );
 }
 
