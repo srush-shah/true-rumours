@@ -1,0 +1,29 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
+
+function App() {
+  const [news, setNews] = useState({});
+
+  
+
+  useEffect(() => {
+    axios
+      .request(options)
+      .then(function (response) {
+        setNews(response.data);
+        console.log(news);
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+  },[news, options]);
+
+  return (
+    <div className="App">
+      <button>Call News</button>
+      <ul>{}</ul>
+    </div>
+  );
+}
+
+export default App;
