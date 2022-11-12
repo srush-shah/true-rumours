@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { Link, matchPath, Outlet } from "react-router-dom";
 import logo from "../Images/favicon.ico";
+
 {
   /* <script src="//unpkg.com/alpinejs" defer></script> */
 }
@@ -201,6 +202,9 @@ export function Navbar() {
                 </form>
               </div>
               <FaUserAlt className="mx-10" />
+              <Link to={"/login"}>
+                <button type="submit">Signin/Signup</button>
+              </Link>
             </div>
           </div>
         </div>
