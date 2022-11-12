@@ -30,6 +30,7 @@ function Fetch() {
   arr.push(
     data.map((value) => {
       let title = value.title;
+      console.log(title);
       return title;
     })
   );
@@ -42,7 +43,11 @@ function Fetch() {
       <h1>{arr}</h1>
       <ul>
         {arr.map((title) => {
-          return <li id={title}>{title}</li>;
+          return (
+            <li className="list-disc" key={title}>
+              {title}
+            </li>
+          );
         })}
       </ul>
     </div>
