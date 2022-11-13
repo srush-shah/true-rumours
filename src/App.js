@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Fetch from "./pages/Fetch";
 import { NotFound } from "./components/NotFound";
 import SubCatPage from "./pages/SubCatPage";
 import Hello from "./pages/Hello";
@@ -14,7 +13,6 @@ function App() {
     <Routes>
       <Route path="/" element={<Hello />} />
       <Route path="/hello" element={<Home />} />
-      <Route path="/fetch" element={<Fetch />} />
       <Route path="/detail" element={<NewsDetail />} />
       <Route path="/login" element={<Login />} />
       <Route path="/subscription" element={<Subscription />} />
