@@ -7,7 +7,7 @@ function Hello() {
   const getNews = () => {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?sources=bbc-news&apikey=4ee6b0eaa4d2426784d1be5b1ba87a39"
+        "https://newsapi.org/v2/top-headlines?country=in&apiKey=a5142567491b4ee7ba00902b29e50c2a&q=india"
       )
       .then((response) => {
         setNews(response.data.articles);
