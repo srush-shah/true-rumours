@@ -38,101 +38,14 @@ export function Navbar() {
                   alt="Logo"
                 />
               </Link>
-              <div className=" max-w-2xl max-h-6 overflow-x-scroll">
-                {/* <button className={`${isactive ? "active" : ""} px-2`}>
-                  #news
-                </button> */}
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : null} px-2`}
-                >
-                  #sport
-                </button>
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : null} px-2`}
-                >
-                  #tech
-                </button>
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : null} px-2`}
-                >
-                  #world
-                </button>
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : null} px-2`}
-                >
-                  #finance
-                </button>
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : null} px-2`}
-                >
-                  #politics
-                </button>
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : null} px-2`}
-                >
-                  #business
-                </button>
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : null} px-2`}
-                >
-                  #economics
-                </button>
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : null} px-2`}
-                >
-                  #entertainment
-                </button>
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : null} px-2`}
-                >
-                  #beatuy
-                </button>
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : null} px-2`}
-                >
-                  #travel
-                </button>
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : null} px-2`}
-                >
-                  #music
-                </button>
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : null} px-2`}
-                >
-                  #food
-                </button>
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : null} px-2`}
-                >
-                  #science
-                </button>
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : null} px-2`}
-                >
-                  #gmaing
-                </button>
-                <button
-                  onClick={handleToggle}
-                  className={`${isactive ? "active" : " "} px-2`}
-                >
-                  #energy
-                </button>
-              </div>
+              <Link
+                to="/subscription"
+                className="inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Subscribe Now
+              </Link>
+
+              {/* search */}
               <link
                 rel="stylesheet"
                 href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css"
@@ -198,7 +111,101 @@ export function Navbar() {
           </div>
         </div>
       </nav>
-
+      <div className=" text-center mt-4 ">
+        {/* <button className={`${isactive ? "active" : ""} px-2`}>
+                  #news
+                </button> */}
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : null} px-2`}
+        >
+          #sport
+        </button>
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : null} px-2`}
+        >
+          #tech
+        </button>
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : null} px-2`}
+        >
+          #world
+        </button>
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : null} px-2`}
+        >
+          #finance
+        </button>
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : null} px-2`}
+        >
+          #politics
+        </button>
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : null} px-2`}
+        >
+          #business
+        </button>
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : null} px-2`}
+        >
+          #economics
+        </button>
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : null} px-2`}
+        >
+          #entertainment
+        </button>
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : null} px-2`}
+        >
+          #beatuy
+        </button>
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : null} px-2`}
+        >
+          #travel
+        </button>
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : null} px-2`}
+        >
+          #music
+        </button>
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : null} px-2`}
+        >
+          #food
+        </button>
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : null} px-2`}
+        >
+          #science
+        </button>
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : null} px-2`}
+        >
+          #gmaing
+        </button>
+        <button
+          onClick={handleToggle}
+          className={`${isactive ? "active" : " "} px-2`}
+        >
+          #energy
+        </button>
+      </div>
       <Outlet />
     </>
   );
