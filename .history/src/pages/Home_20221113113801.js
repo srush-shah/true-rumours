@@ -18,10 +18,10 @@ function Home() {
   const [sports, setSports] = useState([]);
   const [finance, setFinance] = useState([]);
 
-  const getSports = () => {
+  const getSports = (category) => {
     axios
       .get(
-        "https://newsapi.org/v2/everything?q=sports&apikey=4ee6b0eaa4d2426784d1be5b1ba87a39"
+        `https://newsapi.org/v2/everything?q=${category}&apikey=4ee6b0eaa4d2426784d1be5b1ba87a39`
       )
       .then((response) => {
         setSports(response.data.articles);
@@ -30,10 +30,10 @@ function Home() {
         console.log(err);
       });
   };
-  const getFinance = () => {
+  const getFinance = (category) => {
     axios
       .get(
-        "https://newsapi.org/v2/everything?q=finance&apikey=4ee6b0eaa4d2426784d1be5b1ba87a39"
+        `https://newsapi.org/v2/everything?q=${category}&apikey=4ee6b0eaa4d2426784d1be5b1ba87a39`
       )
       .then((response) => {
         setFinance(response.data.articles);
@@ -58,14 +58,14 @@ function Home() {
 
   const handleS = () => {
     setS(!isSActive);
-    getSports("sports");
-    console.log(sports);
+    getNews("sports");
+    console.log(catNews);
   };
 
   const handleF = () => {
     setF(!isFActive);
-    getFinance("finance");
-    console.log(finance);
+    getNews("finance");
+    console.log(catNews);
   };
 
   const handleAd = () => {
@@ -145,15 +145,15 @@ function Home() {
             isSActive ? " visible " : "hidden"
           } grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10 `}
         >
-          <Card data={sports[0] ? sports[0] : news[0]} />
-          <Card data={sports[1] ? sports[1] : news[1]} />
-          <Card data={sports[2] ? sports[2] : news[2]} />
-          <Card data={sports[3] ? sports[3] : news[3]} />
-          <Card data={sports[4] ? sports[4] : news[4]} />
-          <Card data={sports[5] ? sports[5] : news[5]} />
-          <Card data={sports[6] ? sports[6] : news[6]} />
-          <Card data={sports[7] ? sports[7] : news[7]} />
-          <Card data={sports[8] ? sports[8] : news[8]} />
+          <Card data={catNews[0] ? catNews[0] : news[0]} />
+          <Card data={catNews[1] ? catNews[1] : news[1]} />
+          <Card data={catNews[2] ? catNews[2] : news[2]} />
+          <Card data={catNews[3] ? catNews[3] : news[3]} />
+          <Card data={catNews[4] ? catNews[4] : news[4]} />
+          <Card data={catNews[5] ? catNews[5] : news[5]} />
+          <Card data={catNews[6] ? catNews[6] : news[6]} />
+          <Card data={catNews[7] ? catNews[7] : news[7]} />
+          <Card data={catNews[8] ? catNews[8] : news[8]} />
         </div>
         <h1 className="ml-12 sticky text-3xl font-bold w-full bg-white my-10">
           Finance{" "}
@@ -166,15 +166,15 @@ function Home() {
             isFActive ? " visible " : "hidden"
           } grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10 `}
         >
-          <Card data={finance[0] ? finance[0] : news[0]} />
-          <Card data={finance[1] ? finance[1] : news[1]} />
-          <Card data={finance[2] ? finance[2] : news[2]} />
-          <Card data={finance[3] ? finance[3] : news[3]} />
-          <Card data={finance[4] ? finance[4] : news[4]} />
-          <Card data={finance[5] ? finance[5] : news[5]} />
-          <Card data={finance[6] ? finance[6] : news[6]} />
-          <Card data={finance[7] ? finance[7] : news[7]} />
-          <Card data={finance[8] ? finance[8] : news[8]} />
+          <Card data={catNews[0] ? catNews[0] : news[0]} />
+          <Card data={catNews[1] ? catNews[1] : news[1]} />
+          <Card data={catNews[2] ? catNews[2] : news[2]} />
+          <Card data={catNews[3] ? catNews[3] : news[3]} />
+          <Card data={catNews[4] ? catNews[4] : news[4]} />
+          <Card data={catNews[5] ? catNews[5] : news[5]} />
+          <Card data={catNews[6] ? catNews[6] : news[6]} />
+          <Card data={catNews[7] ? catNews[7] : news[7]} />
+          <Card data={catNews[8] ? catNews[8] : news[8]} />
         </div>
       </div>
     </div>

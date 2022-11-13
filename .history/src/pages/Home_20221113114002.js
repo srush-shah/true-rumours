@@ -59,7 +59,7 @@ function Home() {
   const handleS = () => {
     setS(!isSActive);
     getSports("sports");
-    console.log(sports);
+    console.log(catNews);
   };
 
   const handleF = () => {
