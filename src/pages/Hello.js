@@ -48,7 +48,7 @@ function Hello() {
         <Link
           to="/hello"
           state={news}
-          className="bg-slate-100 p-2 rounded-md mt-2 text-slate-800"
+          className="bg-slate-100 px-2 py-3 rounded-md mt-2 text-slate-800"
           aria-disabled
         >
           Go to News Page

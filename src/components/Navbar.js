@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { Link, matchPath, Outlet } from "react-router-dom";
-import logo from "../Images/favicon.ico";
+import logo from "../Images/logo.jpeg";
 
 /* <script src="//unpkg.com/alpinejs" defer></script> */
 
@@ -26,23 +26,11 @@ export function Navbar() {
           <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
             {/* main navbar */}
             <div className="relative flex items-center justify-between h-16">
-              <Link className="flex-shrink-0 mr-32" to="/#top">
-                <img
-                  className="block lg:hidden h-10 w-16"
-                  src={logo}
-                  alt="Logo"
-                />
-                <img
-                  className="hidden lg:block h-10 w-auto"
-                  src={logo}
-                  alt="Logo"
-                />
-              </Link>
-              <Link
-                to="/subscription"
-                className="inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Subscribe Now
+              <Link className="flex flex-row mr-32" to="/#top">
+                <img className="h-10 mr-3" src={logo} alt="Logo" />
+                <h1 className="font-bold text-3xl text-gray-800 font-serif ">
+                  TrueRumours
+                </h1>
               </Link>
 
               {/* search */}
@@ -106,7 +94,19 @@ export function Navbar() {
                   <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
                 </form>
               </div>
-              <FaUserAlt className="mx-10" />
+              <Link
+                to="/subscription"
+                className="inline-flex items-center py-2.5 px-3 ml-2 text-sm font-bold text-blue-700 rounded-lg border-2 border-blue-700 hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Subscribe Now
+              </Link>
+              <Link
+                to="/login"
+                className="inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                <FaUserAlt className="mx-2" />
+                Login
+              </Link>
             </div>
           </div>
         </div>
