@@ -3,10 +3,12 @@ import List from "../components/List";
 import { Navbar } from "../components/Navbar";
 import logo from "../Images/favicon.ico";
 import { useLocation } from "react-router-dom";
+import dat
 
 function NewsDetail(data) {
   const location = useLocation();
   const article = location.state;
+  console.log(article);
   return (
     <div className="mb-10">
       <div className=" block">
@@ -23,7 +25,7 @@ function NewsDetail(data) {
                     {article.title}
                   </h2>
                   <p class="leading-relaxed text-base">
-                    {article.author} | {Date(article.publishedAt)}
+                    {article.author} | {article.publishedAt}
                   </p>
                 </div>
               </div>

@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 function NewsDetail(data) {
   const location = useLocation();
   const article = location.state;
+  conns
   return (
     <div className="mb-10">
       <div className=" block">

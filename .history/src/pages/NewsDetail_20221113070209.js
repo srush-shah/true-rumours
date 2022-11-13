@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 function NewsDetail(data) {
   const location = useLocation();
   const article = location.state;
+  console.log(article);
   return (
     <div className="mb-10">
       <div className=" block">
@@ -22,13 +23,13 @@ function NewsDetail(data) {
                   <h2 class="text-gray-900 text-3xl title-font font-bold mb-2">
                     {article.title}
                   </h2>
-                  <p class="leading-relaxed text-base">
-                    {article.author} | {Date(article.publishedAt)}
-                  </p>
+                  <p class="leading-relaxed text-base">Sub Text</p>
                 </div>
               </div>
             </div>
-            <p className="m-44 -mt-24 mr-96 font-justify">{article.content}</p>
+            <p className="m-44 -mt-24 mr-96 font-justify">
+              
+            </p>
           </section>
         </div>
       </div>
