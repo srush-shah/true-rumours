@@ -35,7 +35,6 @@ function Home() {
   const handleF = () => {
     setF(!isFActive);
     getNews("finance");
-    console.log(catNews);
   };
 
   return (

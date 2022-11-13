@@ -35,7 +35,7 @@ function Home() {
   const handleF = () => {
     setF(!isFActive);
     getNews("finance");
-    console.log(catNews);
+    console.log(catNews)
   };
 
   return (
@@ -86,7 +86,7 @@ function Home() {
             <IoIosArrowDropdownCircle className="inline" onClick={handleS} />
           </button>
         </h1>
-        <div
+        {/* <div
           className={`${
             isSActive ? " visible " : "hidden"
           } grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10 `}
@@ -99,7 +99,7 @@ function Home() {
           <Card data={catNews[5]} />
           <Card data={catNews[6]} />
           <Card data={catNews[7]} />
-          <Card data={catNews[8]} />
+          <Card data={catNews[8]} /> */}
           {/* {news.map((article) => {
             <Card article={article} />;
           })} */}

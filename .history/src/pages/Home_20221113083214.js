@@ -29,13 +29,11 @@ function Home() {
   const handleS = () => {
     setS(!isSActive);
     getNews("sports");
-    console.log(catNews);
   };
 
   const handleF = () => {
     setF(!isFActive);
-    getNews("finance");
-    console.log(catNews);
+    getNews("");
   };
 
   return (

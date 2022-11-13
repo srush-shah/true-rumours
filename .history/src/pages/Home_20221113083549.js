@@ -80,7 +80,7 @@ function Home() {
             <Card article={article} />;
           })} */}
         </div>
-        <h1 className="ml-12 sticky text-3xl font-bold w-full bg-white my-10">
+        {/* <h1 className="ml-12 sticky text-3xl font-bold w-full bg-white my-10">
           Sports{" "}
           <button>
             <IoIosArrowDropdownCircle className="inline" onClick={handleS} />
@@ -99,11 +99,11 @@ function Home() {
           <Card data={catNews[5]} />
           <Card data={catNews[6]} />
           <Card data={catNews[7]} />
-          <Card data={catNews[8]} />
+          <Card data={catNews[8]} /> */}
           {/* {news.map((article) => {
             <Card article={article} />;
           })} */}
-        </div>
+        {/* </div>
         <h1 className="ml-12 sticky text-3xl font-bold w-full bg-white my-10">
           Finance{" "}
           <button>
@@ -123,7 +123,7 @@ function Home() {
           <Card data={catNews[5]} />
           <Card data={catNews[6]} />
           <Card data={catNews[7]} />
-          <Card data={catNews[8]} />
+          <Card data={catNews[8]} /> */}
           {/* {news.map((article) => {
             <Card article={article} />;
           })} */}

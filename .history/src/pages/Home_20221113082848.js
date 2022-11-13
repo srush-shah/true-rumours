@@ -4,7 +4,6 @@ import List from "../components/List";
 import { Navbar } from "../components/Navbar";
 import { useLocation } from "react-router-dom";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
-import axios from "axios";
 
 function Home() {
   const location = useLocation();
@@ -28,14 +27,10 @@ function Home() {
 
   const handleS = () => {
     setS(!isSActive);
-    getNews("sports");
-    console.log(catNews);
   };
 
   const handleF = () => {
     setF(!isFActive);
-    getNews("finance");
-    console.log(catNews);
   };
 
   return (
@@ -91,15 +86,15 @@ function Home() {
             isSActive ? " visible " : "hidden"
           } grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10 `}
         >
-          <Card data={catNews[0]} />
-          <Card data={catNews[1]} />
-          <Card data={catNews[2]} />
-          <Card data={catNews[3]} />
-          <Card data={catNews[4]} />
-          <Card data={catNews[5]} />
-          <Card data={catNews[6]} />
-          <Card data={catNews[7]} />
-          <Card data={catNews[8]} />
+          <Card data={news[0]} />
+          <Card data={news[1]} />
+          <Card data={news[2]} />
+          <Card data={news[3]} />
+          <Card data={news[4]} />
+          <Card data={news[5]} />
+          <Card data={news[6]} />
+          <Card data={news[7]} />
+          <Card data={news[8]} />
           {/* {news.map((article) => {
             <Card article={article} />;
           })} */}
@@ -115,15 +110,15 @@ function Home() {
             isFActive ? " visible " : "hidden"
           } grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10 `}
         >
-          <Card data={catNews[0]} />
-          <Card data={catNews[1]} />
-          <Card data={catNews[2]} />
-          <Card data={catNews[3]} />
-          <Card data={catNews[4]} />
-          <Card data={catNews[5]} />
-          <Card data={catNews[6]} />
-          <Card data={catNews[7]} />
-          <Card data={catNews[8]} />
+          <Card data={news[0]} />
+          <Card data={news[1]} />
+          <Card data={news[2]} />
+          <Card data={news[3]} />
+          <Card data={news[4]} />
+          <Card data={news[5]} />
+          <Card data={news[6]} />
+          <Card data={news[7]} />
+          <Card data={news[8]} />
           {/* {news.map((article) => {
             <Card article={article} />;
           })} */}

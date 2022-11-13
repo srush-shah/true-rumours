@@ -7,7 +7,7 @@ function Hello() {
   const getNews = () => {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=in&apikey=4ee6b0eaa4d2426784d1be5b1ba87a39"
+        "https://newsapi.org/v2/everything?apiKey=0e5983ac19b24025af491e33312389b2"
       )
       .then((response) => {
         setNews(response.data.articles);
@@ -49,7 +49,6 @@ function Hello() {
           to="/hello"
           state={news}
           className="bg-slate-100 p-2 rounded-md mt-2 text-slate-800"
-          aria-disabled
         >
           Go to News Page
         </Link>
