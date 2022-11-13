@@ -8,7 +8,7 @@ function Home() {
   const location = useLocation();
   const news = location.state;
   return (
-    <div className="mb-10">
+    <div className="mb-10 w-screen overflow-clip">
       <div className=" block">
         <Navbar />
         <div className="grid grid-cols-2 gap-6 h-screen mt-10">
@@ -24,7 +24,7 @@ function Home() {
           </div>
           <div className="grid grid-cols-1 grid-flow-row overflow-scroll">
             <div className="bg-white">
-              <h1 className="sticky text-3xl font-bold ml-20 w-full bg-white">
+              <h1 className="sticky text-3xl font-bold ml-20 bg-white">
                 Trending
               </h1>
             </div>
@@ -32,7 +32,7 @@ function Home() {
             <List />
           </div>
         </div>
-        <h1 className="ml-12 sticky text-3xl font-bold w-full bg-white my-10">
+        <h1 className="ml-12 sticky text-3xl font-bold bg-white my-10">
           Latest
         </h1>
         <div className="grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10">
