@@ -4,16 +4,11 @@ import logo from "../Images/favicon.ico";
 
 function Card(data) {
   let article = data.data;
-  console.log(article);
   return (
     <div class="max-w-2xl mx-auto">
-      <div class="bg-white shadow-md border border-gray-200 rounded-lg w-72 dark:bg-gray-800 dark:border-gray-700 h-96 mb-4">
+      <div class="bg-white shadow-md border border-gray-200 rounded-lg w-96 dark:bg-gray-800 dark:border-gray-700 h-72 mb-4">
         <a href="#">
-          <img
-            class="rounded-t-lg h-28 w-full overflow-hidden"
-            src={article.urlToImage}
-            alt={article.description}
-          />
+          <img class="rounded-t-lg" src={article.urlToImage} alt="" />
         </a>
         <div class="p-5">
           <a href="#">

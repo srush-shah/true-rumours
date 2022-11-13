@@ -12,7 +12,7 @@ function Card(data) {
           <img
             class="rounded-t-lg h-28 w-full overflow-hidden"
             src={article.urlToImage}
-            alt={article.description}
+            alt=""
           />
         </a>
         <div class="p-5">

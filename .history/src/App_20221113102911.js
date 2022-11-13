@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
+import Fetch from "./pages/Fetch";
 import { NotFound } from "./components/NotFound";
 import SubCatPage from "./pages/SubCatPage";
 import Hello from "./pages/Hello";

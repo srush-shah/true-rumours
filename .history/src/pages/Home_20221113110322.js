@@ -88,7 +88,7 @@ function Home() {
                     alt="advertisement"
                   />
                   <button
-                    className="mt-6 ml-40 bg-zinc-200 text- p-3 rounded-lg text-lg shadow-sm"
+                    className="mt-6 ml-48 bg-zinc-200 text- p-3 rounded-lg text-lg shadow-sm"
                     onClick={handleAd}
                   >
                     <GrClose className="inline mr-1" /> Remove Ads
@@ -97,13 +97,12 @@ function Home() {
               ) : (
                 <div className="grid grid-cols-1 grid-flow-row gap-8 overflow-scroll mx-10 mt-10 -ml-28">
                   <Card data={trending[0] ? trending[0] : news[0]} />
-                  <Card data={trending[1] ? trending[1] : news[1]} />
-                  <Card data={trending[2] ? trending[2] : news[2]} />
-                  <Card data={trending[3] ? trending[3] : news[3]} />
-                  <Card data={trending[4] ? trending[4] : news[4]} />
-                  <Card data={trending[5] ? trending[5] : news[5]} />
-                </div>
-              )}
+            <Card data={trending[1] ? trending[1] : news[1]} />
+            <Card data={trending[2] ? trending[2] : news[2]} />
+            <Card data={trending[3] ? trending[3] : news[3]} />
+            <Card data={trending[4] ? trending[4] : news[4]} />
+            <Card data={trending[5] ? trending[5] : news[5]} />
+    trending
             </div>
           </div>
           <h1 className="ml-12 sticky text-3xl font-bold bg-white my-10">

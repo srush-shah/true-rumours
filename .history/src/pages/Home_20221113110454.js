@@ -88,7 +88,7 @@ function Home() {
                     alt="advertisement"
                   />
                   <button
-                    className="mt-6 ml-40 bg-zinc-200 text- p-3 rounded-lg text-lg shadow-sm"
+                    className="mt-6 ml-48 bg-zinc-200 text- p-3 rounded-lg text-lg shadow-sm"
                     onClick={handleAd}
                   >
                     <GrClose className="inline mr-1" /> Remove Ads
