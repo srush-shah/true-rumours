@@ -13,10 +13,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Hello />} />
       <Route path="/hello" element={<Home />} />
-      <Route path="/fetch" element={<Fetch />} />
-      <Route path="/detail" element={<NewsDetail />} />
-      <Route path="/subscription" element={<Subscription />} />
-      <Route path="/*" element={<NotFound />} />
+      <Route path="/fetch" element={<Fetch />}></Route>
+      <Route path="/*" element={<NotFound />}></Route>
     </Routes>
   );
 }

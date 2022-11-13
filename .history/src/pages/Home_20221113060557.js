@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 function Home() {
   const location = useLocation();
   const news = location.state;
+  console.log(news);
   return (
     <div className="mb-10">
       <div className=" block">
@@ -28,7 +29,7 @@ function Home() {
                 Trending
               </h1>
             </div>
-            <List />
+            <List data={news} />
             <List />
           </div>
         </div>

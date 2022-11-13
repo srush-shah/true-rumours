@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 function Home() {
   const location = useLocation();
   const news = location.state;
+  console.log(news);
   return (
     <div className="mb-10">
       <div className=" block">
@@ -28,8 +29,8 @@ function Home() {
                 Trending
               </h1>
             </div>
-            <List />
-            <List />
+            <List data={news[0:3]} />
+            <List data={news[3:]} />
           </div>
         </div>
         <h1 className="ml-12 sticky text-3xl font-bold w-full bg-white my-10">

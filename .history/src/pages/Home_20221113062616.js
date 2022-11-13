@@ -28,7 +28,7 @@ function Home() {
                 Trending
               </h1>
             </div>
-            <List />
+            <List data={news[0]} />
             <List />
           </div>
         </div>

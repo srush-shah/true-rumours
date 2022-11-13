@@ -28,8 +28,8 @@ function Home() {
                 Trending
               </h1>
             </div>
-            <List />
-            <List />
+            <List data={news[0], news[1], news[2]} />
+            <List data={(news[3], news[4], news[5])} />
           </div>
         </div>
         <h1 className="ml-12 sticky text-3xl font-bold w-full bg-white my-10">
