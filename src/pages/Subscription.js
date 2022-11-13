@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 function Subscription() {
   return (
@@ -14,7 +15,7 @@ function Subscription() {
             Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.
           </p>
           <div class="flex mx-auto border-2 border-indigo-500 rounded overflow-hidden mt-6">
-            <button class="py-1 px-4 bg-indigo-500 text-white focus:outline-none">
+            <button class="py-1 px-4 bg-indigo-600 text-white focus:outline-none">
               Monthly & Anually
             </button>
           </div>
@@ -29,7 +30,7 @@ function Subscription() {
                 Free
               </h1>
               <p class="flex items-center text-gray-600 mb-2">
-                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-500 text-white rounded-full flex-shrink-0">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -45,7 +46,7 @@ function Subscription() {
                 Complete News Content
               </p>
               <p class="flex items-center text-gray-600 mb-2">
-                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-500 text-white rounded-full flex-shrink-0">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -60,8 +61,8 @@ function Subscription() {
                 </span>
                 Like & Comment
               </p>
-              <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-2/3 focus:outline-none hover:bg-gray-500 rounded">
-                Button
+              <button class="flex items-center mt-auto text-white bg-green-500 border-0 py-2 px-4 w-2/3 focus:outline-none hover:bg-gray-500 rounded">
+                Subscribe Now
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -81,7 +82,7 @@ function Subscription() {
           </div>
           <div class="p-4 w-96">
             <div class="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden">
-              <span class="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
+              <span class="bg-indigo-600 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
                 POPULAR
               </span>
               <h2 class="text-sm tracking-widest title-font mb-1 font-medium">
@@ -92,7 +93,7 @@ function Subscription() {
                 <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
               </h1>
               <p class="flex items-center text-gray-600 mb-2">
-                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-500 text-white rounded-full flex-shrink-0">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -108,7 +109,7 @@ function Subscription() {
                 Complete News Content
               </p>
               <p class="flex items-center text-gray-600 mb-2">
-                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-500 text-white rounded-full flex-shrink-0">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -124,7 +125,7 @@ function Subscription() {
                 Like & Comment
               </p>
               <p class="flex items-center text-gray-600 mb-2">
-                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-500 text-white rounded-full flex-shrink-0">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -140,7 +141,7 @@ function Subscription() {
                 Save News to collections
               </p>
               <p class="flex items-center text-gray-600 mb-2">
-                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-500 text-white rounded-full flex-shrink-0">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -156,7 +157,7 @@ function Subscription() {
                 Change News Language
               </p>
               <p class="flex items-center text-gray-600 mb-6">
-                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-500 text-white rounded-full flex-shrink-0">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -171,20 +172,25 @@ function Subscription() {
                 </span>
                 Get top headlines via email!
               </p>
-              <button class="flex items-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4  w-2/3 focus:outline-none hover:bg-indigo-600 rounded">
-                Button
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 ml-auto"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </button>
+              <a
+                href="https://buy.stripe.com/test_4gw28NfuP8Mbac0aEE"
+                target="_blank"
+              >
+                <button class="flex items-center mt-auto text-white bg-indigo-600 border-0 py-2 px-4  w-2/3 focus:outline-none hover:bg-indigo-700 rounded">
+                  Subscribe Now
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-auto"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+              </a>
               <p class="text-xs text-gray-500 mt-3">
                 Literally you probably haven't heard of them jean shorts.
               </p>
@@ -200,7 +206,7 @@ function Subscription() {
                 <span class="text-lg ml-1 font-normal text-gray-500">/yr</span>
               </h1>
               <p class="flex items-center text-gray-600 mb-2">
-                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-500 text-white rounded-full flex-shrink-0">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -216,7 +222,7 @@ function Subscription() {
                 Complete News Content
               </p>
               <p class="flex items-center text-gray-600 mb-2">
-                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-500 text-white rounded-full flex-shrink-0">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -232,7 +238,7 @@ function Subscription() {
                 Like & Comment
               </p>
               <p class="flex items-center text-gray-600 mb-2">
-                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-500 text-white rounded-full flex-shrink-0">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -248,7 +254,7 @@ function Subscription() {
                 Save News to collections
               </p>
               <p class="flex items-center text-gray-600 mb-2">
-                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-500 text-white rounded-full flex-shrink-0">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -264,7 +270,7 @@ function Subscription() {
                 Change News Language
               </p>
               <p class="flex items-center text-gray-600 mb-6">
-                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-500 text-white rounded-full flex-shrink-0">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -279,20 +285,25 @@ function Subscription() {
                 </span>
                 Get top headlines via email!
               </p>
-              <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-2/3 focus:outline-none hover:bg-gray-500 rounded">
-                Button
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 ml-auto"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </button>
+              <a
+                href=" https://buy.stripe.com/test_bIYfZD96raUjck8cMN"
+                target="_blank"
+              >
+                <button class="flex items-center mt-auto text-white bg-green-500 border-0 py-2 px-4 w-2/3 focus:outline-none hover:bg-gray-500 rounded">
+                  Subscribe Now
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-auto"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+              </a>
               <p class="text-xs text-gray-500 mt-3">
                 Literally you probably haven't heard of them jean shorts.
               </p>
