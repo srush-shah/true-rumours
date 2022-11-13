@@ -7,7 +7,7 @@ function Hello() {
   const getNews = () => {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=in&apikey=4ee6b0eaa4d2426784d1be5b1ba87a39"
+        "https://newsapi.org/v2/top-headlines?sources=bbc-news&apikey=4ee6b0eaa4d2426784d1be5b1ba87a39"
       )
       .then((response) => {
         setNews(response.data.articles);
@@ -46,7 +46,7 @@ function Hello() {
           Get News
         </button>
         <Link
-          to="/hello"
+          to="/"
           state={news}
           className="bg-slate-100 p-2 rounded-md mt-2 text-slate-800"
           aria-disabled

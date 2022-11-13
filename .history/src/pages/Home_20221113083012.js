@@ -28,18 +28,15 @@ function Home() {
 
   const handleS = () => {
     setS(!isSActive);
-    getNews("sports");
-    console.log(catNews);
+    getNews("")
   };
 
   const handleF = () => {
     setF(!isFActive);
-    getNews("finance");
-    console.log(catNews);
   };
 
   return (
-    <div className="mb-10 w-screen overflow-clip">
+    <div className="mb-10">
       <div className=" block">
         <Navbar />
         <div className="grid grid-cols-2 gap-6 h-screen mt-10">
@@ -55,7 +52,7 @@ function Home() {
           </div>
           <div className="grid grid-cols-1 grid-flow-row overflow-scroll">
             <div className="bg-white">
-              <h1 className="sticky text-3xl font-bold ml-20 bg-white">
+              <h1 className="sticky text-3xl font-bold ml-20 w-full bg-white">
                 Trending
               </h1>
             </div>
@@ -63,7 +60,7 @@ function Home() {
             <List />
           </div>
         </div>
-        <h1 className="ml-12 sticky text-3xl font-bold bg-white my-10">
+        <h1 className="ml-12 sticky text-3xl font-bold w-full bg-white my-10">
           Latest
         </h1>
         <div className="grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10">
@@ -91,15 +88,15 @@ function Home() {
             isSActive ? " visible " : "hidden"
           } grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10 `}
         >
-          <Card data={catNews[0]} />
-          <Card data={catNews[1]} />
-          <Card data={catNews[2]} />
-          <Card data={catNews[3]} />
-          <Card data={catNews[4]} />
-          <Card data={catNews[5]} />
-          <Card data={catNews[6]} />
-          <Card data={catNews[7]} />
-          <Card data={catNews[8]} />
+          <Card data={news[0]} />
+          <Card data={news[1]} />
+          <Card data={news[2]} />
+          <Card data={news[3]} />
+          <Card data={news[4]} />
+          <Card data={news[5]} />
+          <Card data={news[6]} />
+          <Card data={news[7]} />
+          <Card data={news[8]} />
           {/* {news.map((article) => {
             <Card article={article} />;
           })} */}
@@ -115,15 +112,15 @@ function Home() {
             isFActive ? " visible " : "hidden"
           } grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10 `}
         >
-          <Card data={catNews[0]} />
-          <Card data={catNews[1]} />
-          <Card data={catNews[2]} />
-          <Card data={catNews[3]} />
-          <Card data={catNews[4]} />
-          <Card data={catNews[5]} />
-          <Card data={catNews[6]} />
-          <Card data={catNews[7]} />
-          <Card data={catNews[8]} />
+          <Card data={news[0]} />
+          <Card data={news[1]} />
+          <Card data={news[2]} />
+          <Card data={news[3]} />
+          <Card data={news[4]} />
+          <Card data={news[5]} />
+          <Card data={news[6]} />
+          <Card data={news[7]} />
+          <Card data={news[8]} />
           {/* {news.map((article) => {
             <Card article={article} />;
           })} */}

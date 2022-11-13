@@ -35,11 +35,11 @@ function Home() {
   const handleF = () => {
     setF(!isFActive);
     getNews("finance");
-    console.log(catNews);
+    console.log(catNews)
   };
 
   return (
-    <div className="mb-10 w-screen overflow-clip">
+    <div className="mb-10">
       <div className=" block">
         <Navbar />
         <div className="grid grid-cols-2 gap-6 h-screen mt-10">
@@ -55,7 +55,7 @@ function Home() {
           </div>
           <div className="grid grid-cols-1 grid-flow-row overflow-scroll">
             <div className="bg-white">
-              <h1 className="sticky text-3xl font-bold ml-20 bg-white">
+              <h1 className="sticky text-3xl font-bold ml-20 w-full bg-white">
                 Trending
               </h1>
             </div>
@@ -63,7 +63,7 @@ function Home() {
             <List />
           </div>
         </div>
-        <h1 className="ml-12 sticky text-3xl font-bold bg-white my-10">
+        <h1 className="ml-12 sticky text-3xl font-bold w-full bg-white my-10">
           Latest
         </h1>
         <div className="grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10">
@@ -86,7 +86,7 @@ function Home() {
             <IoIosArrowDropdownCircle className="inline" onClick={handleS} />
           </button>
         </h1>
-        <div
+        {/* <div
           className={`${
             isSActive ? " visible " : "hidden"
           } grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10 `}
@@ -99,18 +99,18 @@ function Home() {
           <Card data={catNews[5]} />
           <Card data={catNews[6]} />
           <Card data={catNews[7]} />
-          <Card data={catNews[8]} />
+          <Card data={catNews[8]} /> */}
           {/* {news.map((article) => {
             <Card article={article} />;
           })} */}
-        </div>
+        {/* </div> */}
         <h1 className="ml-12 sticky text-3xl font-bold w-full bg-white my-10">
           Finance{" "}
           <button>
             <IoIosArrowDropdownCircle className="inline" onClick={handleF} />
           </button>
         </h1>
-        <div
+        {/* <div
           className={`${
             isFActive ? " visible " : "hidden"
           } grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10 `}
@@ -123,11 +123,11 @@ function Home() {
           <Card data={catNews[5]} />
           <Card data={catNews[6]} />
           <Card data={catNews[7]} />
-          <Card data={catNews[8]} />
+          <Card data={catNews[8]} /> */}
           {/* {news.map((article) => {
             <Card article={article} />;
           })} */}
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );
