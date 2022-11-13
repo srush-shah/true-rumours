@@ -107,61 +107,62 @@ function Home() {
             </div>
           </div>
         </div>
-        <h1 className="ml-12 sticky text-3xl font-bold bg-white my-10">
-          Latest
-        </h1>
-        <div className="grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10">
-          <Card data={news[0]} />
-          <Card data={news[1]} />
-          <Card data={news[2]} />
-          <Card data={news[3]} />
-          <Card data={news[4]} />
-          <Card data={news[5]} />
-          <Card data={news[6]} />
-          <Card data={news[7]} />
-          <Card data={news[8]} />
-        </div>
-        <h1 className="ml-12 sticky text-3xl font-bold w-full bg-white my-10">
-          Sports{" "}
-          <button>
-            <IoIosArrowDropdownCircle className="inline" onClick={handleS} />
-          </button>
-        </h1>
-        <div
-          className={`${
-            isSActive ? " visible " : "hidden"
-          } grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10 `}
-        >
-          <Card data={catNews[0] ? catNews[0] : news[0]} />
-          <Card data={catNews[1] ? catNews[1] : news[1]} />
-          <Card data={catNews[2] ? catNews[2] : news[2]} />
-          <Card data={catNews[3] ? catNews[3] : news[3]} />
-          <Card data={catNews[4] ? catNews[4] : news[4]} />
-          <Card data={catNews[5] ? catNews[5] : news[5]} />
-          <Card data={catNews[6] ? catNews[6] : news[6]} />
-          <Card data={catNews[7] ? catNews[7] : news[7]} />
-          <Card data={catNews[8] ? catNews[8] : news[8]} />
-        </div>
-        <h1 className="ml-12 sticky text-3xl font-bold w-full bg-white my-10">
-          Finance{" "}
-          <button>
-            <IoIosArrowDropdownCircle className="inline" onClick={handleF} />
-          </button>
-        </h1>
-        <div
-          className={`${
-            isFActive ? " visible " : "hidden"
-          } grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10 `}
-        >
-          <Card data={catNews[0] ? catNews[0] : news[0]} />
-          <Card data={catNews[1] ? catNews[1] : news[1]} />
-          <Card data={catNews[2] ? catNews[2] : news[2]} />
-          <Card data={catNews[3] ? catNews[3] : news[3]} />
-          <Card data={catNews[4] ? catNews[4] : news[4]} />
-          <Card data={catNews[5] ? catNews[5] : news[5]} />
-          <Card data={catNews[6] ? catNews[6] : news[6]} />
-          <Card data={catNews[7] ? catNews[7] : news[7]} />
-          <Card data={catNews[8] ? catNews[8] : news[8]} />
+          <h1 className="ml-12 sticky text-3xl font-bold bg-white my-10">
+            Latest
+          </h1>
+          <div className="grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10">
+            <Card data={news[0]} />
+            <Card data={news[1]} />
+            <Card data={news[2]} />
+            <Card data={news[3]} />
+            <Card data={news[4]} />
+            <Card data={news[5]} />
+            <Card data={news[6]} />
+            <Card data={news[7]} />
+            <Card data={news[8]} />
+          </div>
+          <h1 className="ml-12 sticky text-3xl font-bold w-full bg-white my-10">
+            Sports{" "}
+            <button>
+              <IoIosArrowDropdownCircle className="inline" onClick={handleS} />
+            </button>
+          </h1>
+          <div
+            className={`${
+              isSActive ? " visible " : "hidden"
+            } grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10 `}
+          >
+            <Card data={catNews[0] ? catNews[0] : news[0]} />
+            <Card data={catNews[1] ? catNews[1] : news[1]} />
+            <Card data={catNews[2] ? catNews[2] : news[2]} />
+            <Card data={catNews[3] ? catNews[3] : news[3]} />
+            <Card data={catNews[4] ? catNews[4] : news[4]} />
+            <Card data={catNews[5] ? catNews[5] : news[5]} />
+            <Card data={catNews[6] ? catNews[6] : news[6]} />
+            <Card data={catNews[7] ? catNews[7] : news[7]} />
+            <Card data={catNews[8] ? catNews[8] : news[8]} />
+          </div>
+          <h1 className="ml-12 sticky text-3xl font-bold w-full bg-white my-10">
+            Finance{" "}
+            <button>
+              <IoIosArrowDropdownCircle className="inline" onClick={handleF} />
+            </button>
+          </h1>
+          <div
+            className={`${
+              isFActive ? " visible " : "hidden"
+            } grid grid-rows-1 grid-flow-col gap-8 overflow-scroll mx-10 `}
+          >
+            <Card data={catNews[0] ? catNews[0] : news[0]} />
+            <Card data={catNews[1] ? catNews[1] : news[1]} />
+            <Card data={catNews[2] ? catNews[2] : news[2]} />
+            <Card data={catNews[3] ? catNews[3] : news[3]} />
+            <Card data={catNews[4] ? catNews[4] : news[4]} />
+            <Card data={catNews[5] ? catNews[5] : news[5]} />
+            <Card data={catNews[6] ? catNews[6] : news[6]} />
+            <Card data={catNews[7] ? catNews[7] : news[7]} />
+            <Card data={catNews[8] ? catNews[8] : news[8]} />
+          </div>
         </div>
       </div>
     </div>
