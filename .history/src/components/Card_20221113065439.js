@@ -4,6 +4,7 @@ import logo from "../Images/favicon.ico";
 
 function Card(data) {
   let article = data.data;
+  console.
   return (
     <div class="max-w-2xl mx-auto">
       <div class="bg-white shadow-md border border-gray-200 rounded-lg w-96 dark:bg-gray-800 dark:border-gray-700 h-72 mb-4">

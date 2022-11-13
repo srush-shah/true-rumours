@@ -30,7 +30,6 @@ function NewsDetail(data) {
               </div>
             </div>
             <p className="m-44 -mt-24 mr-96 font-justify h-screen overflow-clip">
-              {article.content}
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               feugiat luctus ex, sit amet tincidunt purus semper et. Morbi in
               nunc sit amet mi facilisis molestie. Etiam ex augue, maximus vel

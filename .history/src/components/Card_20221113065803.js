@@ -4,6 +4,7 @@ import logo from "../Images/favicon.ico";
 
 function Card(data) {
   let article = data.data;
+  console.log(article);
   return (
     <div class="max-w-2xl mx-auto">
       <div class="bg-white shadow-md border border-gray-200 rounded-lg w-96 dark:bg-gray-800 dark:border-gray-700 h-72 mb-4">
@@ -21,7 +22,6 @@ function Card(data) {
           </p>
           <Link
             to={"/detail"}
-            state={article}
             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Read more
